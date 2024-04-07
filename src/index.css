@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "DM Sans", sans-serif;
+    @apply bg-slate-950;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-sm bg-slate-600;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex-grow h-8 flex items-center justify-center text-sm bg-slate-800 text-slate-400 rounded-sm transition-opacity hover:opacity-80;
+  }
+}
